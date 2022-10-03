@@ -1,0 +1,90 @@
+body {
+    background-color: black;
+    color: white;
+    font-family: sans-serif;
+}
+
+.wd-tabs li {
+    display: inline;
+}
+
+.wd-tabs {
+    padding-left: 0px;
+}
+
+.wd-selected {
+    border-bottom: 2px blue solid;
+    padding-bottom: 20px;
+}
+
+.wd-rounded-corners-all-around {
+    border-radius: 50px;
+}
+
+.wd-highlighted-hyperlink-fg-color {
+    color: rgb(29,161,242); }
+
+.wd-links-text-fg-color-size {
+    color: rgb(110,118,125);
+    font-size: 15px;
+    padding: 16px;}
+
+.wd-links-indiv {
+    padding: 16px;}
+
+.wd-search-box-size {
+    width: 90%;
+    height: 25px}
+
+
+.wd-search-text-fg-color {
+    color: ghostwhite; }
+
+
+.wd-search-box-bg-color {
+    background-color: darkgray; }
+
+.wd-pos-right-12 {
+    position: absolute;
+    right: 12px;      }
+
+
+
+.wd-post-margin {
+    margin: 10px;
+}
+
+.wd-border-thin {
+    border-width: 4px; }
+
+
+.wd-post-topic-font-size-color {
+    font-size: 13px;
+    color: rgb(110,118,125);
+    margin: 4px;
+}
+
+
+.wd-post-tuit-title-font-size-color {
+    color: white;
+    margin: 6px;
+}
+
+.wd-post-tuit-count-font-size-color {
+    font-size: 12px;
+    color: rgb(110,118,124);
+    margin: 4px;
+}
+
+.wd-float-left {
+    float: left;
+}
+
+.wd-float-right {
+    float: right;
+    /*height: 100px;*/
+}
+
+.wd-float-done {
+    clear: both;
+}
