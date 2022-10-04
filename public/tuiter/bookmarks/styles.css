@@ -1,0 +1,152 @@
+body {
+    background-color: black;
+    color: white;
+    font-family: sans-serif;
+}
+
+
+.wd-div-border {
+    border-color: rgb(47,51,54);
+    /*border-style: solid;*/
+    border-width: 1px;
+}
+
+.wd-dp-size {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    margin-left: 16px;
+    margin-top: 12px;
+}
+
+.wd-account-post-area {
+    margin-left: 12px;
+    margin-top: 12px;
+}
+
+.wd-account-name-font {
+    font-size: 15px;
+    color: white;
+    font-weight: bold;
+}
+
+.wd-account-handle-font {
+    font-size: 15px;
+    color: lightgrey;
+}
+
+.wd-account-post-preview-font {
+    font-size: 15px;
+    color: white;
+}
+
+.wd-float-left {
+    float: left;
+}
+
+.wd-float-right {
+    float: right;
+}
+
+.wd-float-done {
+    clear: both;
+}
+
+
+.wd-title-padding {
+    padding-left: 16px;
+    padding-top: 12px;
+}
+
+.wd-title-font {
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 0px;
+}
+
+.wd-account-font {
+    margin-top: 0px;
+    font-size: 13px;
+    color: lightgray;
+    padding-bottom: 12px;
+    border-bottom: lightgray 1px solid;
+}
+
+
+
+
+
+.wd-post-preview-text-area-top {
+    margin-top: 6px;
+    max-width: 506px;
+    margin-left: 16px;
+    margin-bottom: 12px;
+    padding-left: 62px;
+
+}
+
+.wd-bookmark-photo-size {
+    width: 504px;
+    max-width: 506px;
+    height: 254px;
+
+    margin-left: 78px;
+
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+
+    border-style: solid;
+    border-width: 1px;
+    border-color: lightgrey;
+
+}
+
+.wd-post-preview-text-area-bottom {
+
+    padding: 12px;
+
+    /*506 - 12 = 494*/
+    max-width: 480px;
+
+    /*replaced with: wd-left-spacing-photo*/
+    /*margin-left: 78px;*/
+    margin-bottom: 12px;
+
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+
+    border-style: solid;
+    border-width: 1px;
+    border-color: lightgrey;
+}
+
+.wd-post-preview-head {
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+}
+
+.wd-post-preview-body {
+    font-size: 15px;
+    color: lightgray;
+
+}
+
+
+.wd-left-spacing-photo {
+    margin-left: 78px;
+}
+
+.wd-max-width-control {
+    max-width: 506px;
+}
+
+.wd-table-buttons {
+    width: 100%;
+    text-align: center;
+}
+
+.wd-table-buttons-selected {
+    color: red;
+}
