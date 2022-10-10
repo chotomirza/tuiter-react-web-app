@@ -1,126 +1,47 @@
 body {
-    background-color: black;
-    color: white;
-    font-family: sans-serif;
+    /*background-color: black;*/
+    /*color: white;*/
+    /*font-family: sans-serif;*/
 }
 
-.wd-tabs li {
-    display: inline;
+.wd-nudge-up {
+    bottom: 8px;
+    left: 25px;
 }
 
-.wd-tabs {
-    padding-left: 0px;
+.wd-post-title-pos {
+    top: 260px;
+    bottom: 0px;
+    left: 10px;
+    right: 0px;
 }
 
-.wd-selected {
-    border-bottom: 2px blue solid;
-    padding-bottom: 20px;
-}
-
-.wd-rounded-corners-all-around {
-    border-radius: 50px;
-    border-color: rgb(47,51,54);
-}
-
-.wd-highlighted-hyperlink-fg-color {
-    color: rgb(29,161,242); }
-
-.wd-links-text-fg-color-size {
-    color: rgb(110,118,125);
-    font-size: 15px;
-    padding: 16px;}
-
-.wd-links-indiv {
-    padding: 16px;}
-
-.wd-search-box-size {
-    width: 90%;
-    height: 25px}
-
-
-.wd-search-text-fg-color {
-    color: ghostwhite; }
-
-
-.wd-search-box-bg-color {
-    background-color: darkgray; }
-
-.wd-pos-right-12 {
-    position: absolute;
-    right: 12px;      }
-
-
-
-.wd-post-margin {
-    margin: 10px;
-}
-
-.wd-border-thin {
-    border-width: 1px;
-    }
-
-
-.wd-post-topic-font-size-color {
-    font-size: 13px;
-    color: rgb(110,118,125);
-    margin: 4px;
-}
-
-.wd-photo-post {
-    height: 105px;
+.wd-color-tuit-blue{
+    color: dodgerblue;
 }
 
 
-.wd-border-solid {
-    border-top-style: solid;
-    border-bottom-style: solid }
+/*.wd-search-tuiter {*/
+/*    bottom: 7px;*/
+/*    left: 10px;*/
+/*}*/
 
+/*.wd-nav-tabs {*/
+/*    width: 100%;*/
+/*    color: rgb(29,161,242);*/
+/*    padding: 0px;*/
+/*}*/
 
-.wd-post-tuit-title-font-size-color {
-    color: white;
-    margin: 6px;
-}
+/*.wd-nav-tabs li {*/
+/*    list-style-type: none;*/
+/*    display: inline-block;*/
+/*}*/
 
-.wd-post-tuit-count-font-size-color {
-    font-size: 12px;
-    color: rgb(110,118,124);
-    margin: 4px;
-}
-
-.wd-float-left {
-    float: left;
-}
-
-.wd-float-right {
-    float: right;
-}
-
-.wd-float-done {
-    clear: both;
-}
-
-.wd-post-author-name-font {
-    color: aliceblue;
-    font-weight: bold;
-
-}
-
+/*.wd-nav-tabs .wd-selected {*/
+/*    border-bottom: solid 4px rgb(29,161,242);*/
+/*}*/
 
 .wd-author-logo {
     width: 12px;
 
 }
-
-.wd-author-photo-padding {
-    padding-top: 3px;
-    padding-right: 16px;
-}
-
-
-.wd-post-w-photo {
-    width: 100px;
-    height: 100px;
-
-    border-radius: 20%;
-}
-

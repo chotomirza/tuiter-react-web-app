@@ -3,250 +3,313 @@
 <head>
     <meta charset="UTF-8">
     <title>Explore</title>
+
+    <!--    our css         -->
     <link href="index.css" rel="stylesheet"/>
+
+
+<!--    bootstrap      -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+          rel="stylesheet"/>
+
+<!--    fontawesome     -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+          rel="stylesheet"/>
+
+
 </head>
+
+
 <body>
 
-<div>
-    <input
-            type="text"
-            placeholder="&#x1F50D; Search Tuiter"
-            class="wd-rounded-corners-all-around
-                    wd-search-text-fg-color
-                    wd-search-box-bg-color
-                    wd-search-box-size"
-
-
-    />
-
-    <a href="explore-settings.html"
-       class="wd-pos-right-12"
-    >&#x2699;</a>
-
-    <ul class="wd-tabs
-            wd-links-text-fg-color-size">
-        <li class="wd-links-indiv
-                wd-selected
-                wd-highlighted-hyperlink-fg-color">
-                For you
-
-        </li>
-        <li class="wd-links-indiv">
-<!--            <a href="tuit.html">-->
-                Trending
-<!--            </a>-->
-        </li>
-        <li class="wd-links-indiv">
-<!--            <a href="tuit.html">-->
-                COVID-19
-<!--            </a>-->
-        </li>
-        <li class="wd-links-indiv">
-<!--            <a href="tuit.html">-->
-                News
-<!--            </a>-->
-        </li>
-        <li class="wd-links-indiv">
-<!--            <a href="tuit.html">-->
-                Sports
-<!--            </a>-->
-        </li>
-        <li class="wd-links-indiv">
-<!--            <a href="tuit.html">-->
-                Entertainment
-<!--            </a>-->
-        </li>
-    </ul>
+<div class="container pt-1">
 
-<!--    Suggested Posts        -->
+<!--        Main Row        -->
+    <div class = "row mt-2">
 
-<!--    Starship    -->
-    <div class="wd-post-margin
-                wd-border-thin
-                wd-border-solid">
+        <!--        ==Left Sidebar==      -->
+        <div class="col-sm-1 col-md-2 col-xl-2 col-xxl-2">
+            <div class="list-group">
+                <a href="#" class="list-group-item">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="#" class="list-group-item"><i class="fa fa-home"></i> Home</a>
+                <a href="#" class="list-group-item active" ><i class="fa fa-hashtag"></i> Explore</a>
+                <a href="#" class="list-group-item"> <i class="fa fa-bell"></i> Notifications</a>
+                <a href="#" class="list-group-item"> <i class="fa fa-envelope"></i> Messages</a>
+                <a href="#" class="list-group-item"> <i class="fa fa-bookmark"></i> Bookmarks</a>
+                <a href="#" class="list-group-item"> <i class="fa fa-list"></i> Lists</a>
+                <a href="#" class="list-group-item"> <i class="fa fa-user"></i> Profile</a>
+                <a href="#" class="list-group-item">
+<!--                            <span class="fa-stack">-->
+                                <i class="fas fa-circle"></i>
+<!--                    FontAwesome Ellipsis not showing up             -->
+<!--                                <i class="fab fa-ellipsis fa-inverse"></i></span>-->
+                    More</a>
+            </div>
+            <button class="btn btn-primary w-100 mt-2 rounded-pill">Tuit</button>
+        </div>
 
-        <p class="wd-post-topic-font-size-color
-                    ">
-            Trending in Science
-        </p>
 
-        <div class="wd-float-right">&ctdot;</div>
-<!--        <div class="wd-float-done"></div>-->
 
 
-        <p class="wd-post-tuit-title-font-size-color">
-            Starship
-        </p>
 
-        <p class="wd-post-tuit-count-font-size-color">
-            55.5K Tuits
-        </p>
 
-    </div>
 
 
-<!--Trending-->
-    <div class="wd-post-margin
-                wd-border-thin
-                wd-border-solid">
 
-        <p class="wd-post-topic-font-size-color
-                    ">
-            Sports &centerdot; Trending
-        </p>
 
-        <div class="wd-float-right">&ctdot;</div>
-        <!--        <div class="wd-float-done"></div>-->
 
 
-        <p class="wd-post-tuit-title-font-size-color">
-            Joe Rogan
-        </p>
 
-        <p class="wd-post-tuit-count-font-size-color">
-            5,218 Tuits
-        </p>
 
-    </div>
 
 
-<!--    NY Times    -->
-    <div class="wd-post-margin
-                wd-border-thin
-                wd-border-solid
-                wd-photo-post">
 
-        <img class="wd-float-right wd-post-w-photo wd-author-photo-padding"
-             src="https://assets.vogue.com/photos/5e8799681e55b90008eb6f04/master/pass/cuomos-square-1.jpg"
-        />
 
+        <!--        ==Middle==       -->
+        <div class="col-sm-10 col-md-7 col-xl-7 col-xxl-6">
 
-        <span class="wd-float-done"></span>
+<!--            Search box          -->
+            <div class="row">
+                <div class="col-11 position-relative">
+                    <input class="form-control rounded-pill ps-5"
+                            placeholder="Search Tuiter"/>
+                    <span class="position-absolute wd-nudge-up">
+                        <i class="fa fa-binoculars"></i>
+                    </span>
+                </div>
 
-        <p class="wd-post-topic-font-size-color
-                    ">
+                <div class="col-1">
+                    <span class="float-end">
+                        <i class="fa fa-cog fa-2x wd-color-tuit-blue" ></i>
+                    </span>
+                </div>
 
+            </div>
 
-            <img class="wd-author-logo "
-                 src="https://pbs.twimg.com/profile_images/1098244578472280064/gjkVMelR_400x400.png"
-            />
+            <!--            Tabs on top         -->
+            <ul class="nav nav-tabs mt-2">
+                <li class="nav-item">
+                    <a class="nav-link active">For You</a>
+                </li>
 
+                <li class="nav-item">
+                    <a class="nav-link">Trending</a>
+                </li>
 
-            <span class="wd-post-author-name-font"
-        >The New York Times</span>
+                <li class="nav-item">
+                    <a class="nav-link">News</a>
+                </li>
 
-            <img class="wd-author-logo"
-                 src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Twitter_Verified_Badge.svg/2048px-Twitter_Verified_Badge.svg.png"
-            />
+                <li class="nav-item">
+                    <a class="nav-link">Sports</a>
+                </li>
 
-            &centerdot; Yesterday
-        </p>
+                <li class="nav-item">
+                    <a class="nav-link">Entertainment</a>
+                </li>
 
+            </ul>
 
-        <p class="wd-post-tuit-title-font-size-color">
-            CNN's Cuomo conundrum: A star anchor with a brother in trouble
-        </p>
 
 
-    </div>
 
 
+            <!-- Start of Post-->
+<!--            <div class="position-relative">-->
+<!--                        <img src="../../images/ships.png" class="w-100"/>-->
+<!--                        <h1 class="position-absolute wd-nudge-up text-white">SpaceX 1</h1>-->
+<!--            </div>-->
 
+            <div class="card position-relative">
+                <img class="card-img-top" src="../../images/ships.png" alt="a fleet of ships">
+                <h1 class="text-white position-absolute wd-post-title-pos">Fleets of War</h1>
 
 
+                <ul class="list-group list-group-flush">
 
-    <!--    COVID19    -->
-    <div class="wd-post-margin
-                wd-border-thin
-                wd-border-solid
-                wd-photo-post">
+                    <li class="list-group-item">
+                        <div class="card-body">
+                            <p class="card-text">
 
-        <img class="wd-float-right wd-post-w-photo wd-author-photo-padding"
-             src="https://upload.wikimedia.org/wikipedia/commons/0/0b/Harvard_Square_in_Cambridge%2C_Massachusetts.jpg"
-        />
+<!--                                each row added here-->
+                            <div class="row">
+                                <div class="col float-start">
+                                    <div class="row text-secondary small">
+                                        Web Development
+                                    </div>
 
+                                    <div class="">
+                                        <span class="text-black fw-bolder">ReactJS</span>
+                                        <span>
+                                <img class="wd-author-logo"
+                                     src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Twitter_Verified_Badge.svg/2048px-Twitter_Verified_Badge.svg.png"/>
+                            </span>
+                                        <span class="text-secondary small">- 2h</span>
+                                    </div>
+                                </div>
 
-        <span class="wd-float-done"></span>
+                                <div class="text-black fw-bold small">
+                                    React.js is a component based front end library that makes it very easy to build Single Page Application or SPAs
+                                </div>
 
-        <p class="wd-post-topic-font-size-color
-                    ">
+                                <div class="text-secondary small">
+                                    123K Tweets
+                                </div>
+                            </div>
 
+                            <div class="col float-end">
+                                <img src="../../images/reactlogo.png" width="100px" height="100px" class="float-end rounded mt-2">
+                            </div>
+                        </div>
 
-            COVID-19 &centerdot; LIVE
-        </p>
 
+                            </p>
+                        </div>
 
-        <p class="wd-post-tuit-title-font-size-color">
-            COVID-19: News and updates for Massachusetts
-        </p>
+                    </li>
 
+                    <li class="list-group-item">
+                        <p class="card-text">
+                            Dapibus ac facilisis in
+                        </p>
+                    </li>
 
-    </div>
+                    <li class="list-group-item">
+                        Vestibulum at eros
+                    </li>
+                </ul>
 
 
 
-    <!--    Bloomberg    -->
-    <div class="wd-post-margin
-                wd-border-thin
-                wd-border-solid
-                wd-photo-post">
 
-        <img class="wd-float-right wd-post-w-photo wd-author-photo-padding"
-             src="https://www.reuters.com/resizer/rlnuEVf8DHeFvPmYGorSgmLO0J0=/1920x1005/smart/filters:quality(80)/cloudfront-us-east-2.images.arcpublishing.com/reuters/7Z4D2XW77NMH7JTI5TWXWJ76MY.jpg"
-        />
 
 
-        <span class="wd-float-done"></span>
 
-        <p class="wd-post-topic-font-size-color
-                    ">
+            </div>
 
 
-            <img class="wd-author-logo"
-                 src="https://assets.stickpng.com/thumbs/608ff6fc5d1f990004970e68.png"
-            />
+        </div>
 
+        <!--        ==Right Sidebar==       -->
+        <div class="col-sm-1 col-md-3 col-xl-3 col-xxl-4">
+            <ul class="list-group">
 
-            <span class="wd-post-author-name-font"
-            >Bloomberg Opinion</span>
+                <li class="list-group-item">
+                    <div class="row">
+                        <div class="col"><b>Who to follow</b></div>
+                    </div>
+                </li>
 
-            <img class="wd-author-logo "
-                 src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Twitter_Verified_Badge.svg/2048px-Twitter_Verified_Badge.svg.png"
-            />
 
-            &centerdot; Yesterday
-        </p>
+                <li class="list-group-item">
+                    <div class="row">
 
+                        <div class="col-2">
+                            <img src="https://aninditadhikary.files.wordpress.com/2010/12/javalogosmall1.png"
+                                 width="50px" height="50px"
+                                 class="rounded-circle">
+                        </div>
 
-        <p class="wd-post-tuit-title-font-size-color">
-            Thinking about getting a Booster? Read this first
-        </p>
+                        <div class="col float-start">
+                            <div class="row"><b>Java <i class="fa fa-certificate"></i></b></div>
 
+                            <div class="row">@Java</div>
+                        </div>
 
-    </div>
+                        <div class="col">
+                            <button class="btn btn-primary rounded-pill float-end">Follow</button>
+                        </div>
 
+                    </div>
+                </li>
 
 
 
+<!--                <div class="col-7">-->
+<!--                    <span class="fw-bold text-black small">Relativity Space<i class="fa-solid fa-circle-check text-black ps-2"></i></span>-->
+<!--                    <div class="wd-handle text-secondary small">@relativityspace</div>-->
+<!--                </div>-->
 
-    <div class="wd-post-margin
-                wd-border-thin
-                wd-border-solid">
+<!--                <div class="col-3 mt-1">-->
+<!--                    <button type="button" class="btn btn-primary rounded-pill float-end wd-follow-button">Follow</button>-->
+<!--                </div>-->
 
-        <p class="wd-post-topic-font-size-color
-                    ">
-            Trending in United States
-        </p>
 
-        <div class="wd-float-right">&ctdot;</div>
+                <li class="list-group-item">
+                    <div class="row">
 
-        <p class="wd-post-tuit-title-font-size-color">
-            Wonder Bread
-        </p>
+                        <div class="col-2">
+                            <img src="https://res.cloudinary.com/crunchbase-production/image/upload/j3dbh6kok0dket3uz2vy"
+                                 width="50px" height="50px"
+                                 class="rounded-circle">
+                        </div>
 
-        <p class="wd-post-tuit-count-font-size-color">
-            1,259 Tuits
-        </p>
+                        <div class="col float-start">
+                            <div class="row"><b>Relativity Space <i class="fa fa-certificate"></i></b></div>
+
+                            <div class="row">@relativityspace</div>
+                        </div>
+
+                        <div class="col">
+                            <button class="btn btn-primary rounded-pill float-end">Follow</button>
+                        </div>
+
+                    </div>
+                </li>
+
+                <li class="list-group-item">
+                    <div class="row">
+                        <div class="col-2">
+                            <img src="https://res.cloudinary.com/crunchbase-production/image/upload/c_lpad,f_auto,q_auto:eco,dpr_1/vx4hxg2tnybefwmt4xxb"
+                                 width="50px" class="rounded-circle">
+                        </div>
+                        <div class="col float-start">
+                            <div class="row"><b>Virgin Galactic <i class="fa fa-certificate"></i></b></div>
+
+                            <div class="row">@virgingalactic</div>
+
+                        </div>
+                        <div class="col"><button class="btn btn-primary rounded-pill float-end">Follow</button></div>
+                    </div>
+                </li>
+
+                <li class="list-group-item">
+                    <div class="row">
+                        <div class="col-2">
+                            <img src="../../images/nasa_pic.jpg"
+                                 width="50px"
+                                 class="rounded-circle">
+                        </div>
+                        <div class="col float-start">
+                            <div class="row"><b>NASA <i class="fa fa-certificate"></i></b></div>
+
+                            <div class="row">@NASA</div>
+
+                        </div>
+                        <div class="col"><button class="btn btn-primary rounded-pill float-end">Follow</button></div>
+                    </div>
+                </li>
+
+                <li class="list-group-item">
+                    <div class="row">
+                        <div class="col-2">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/e/e8/Tesla_logo.png" width="50px" class="rounded-circle">
+                        </div>
+                        <div class="col float-start">
+                            <div class="row"><b>Tesla <i class="fa fa-certificate"></i></b></div>
+
+                            <div class="row">@Tesla</div>
+
+                        </div>
+                        <div class="col"><button class="btn btn-primary rounded-pill float-end">Follow</button></div>
+                    </div>
+                </li>
+
+
+            </ul>
+        </div>
 
     </div>
 
