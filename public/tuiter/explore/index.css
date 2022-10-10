@@ -14,10 +14,29 @@ body {
     bottom: 0px;
     left: 10px;
     right: 0px;
+    text-shadow: 1px 1px 2px #000000;
 }
 
-.wd-color-tuit-blue{
-    color: dodgerblue;
+/*.wd-color-tuit-blue{*/
+/*    color: dodgerblue;*/
+/*}*/
+
+.list-group-item.wd-card-padding-spec {
+    padding: 4px 6px;
+}
+
+.card-body.wd-card-body-override-spec {
+    padding: 0px 6px;
+}
+
+.btn-primary.override-bs {
+    background-color: #a90dfd;
+    border-color: #fd0d51;
+    border-width: 10px;
+    border-radius: 20px;
+    border-style: dashed;
+    font-size: 2em;
+    font-weight: bolder;
 }
 
 
@@ -44,4 +63,31 @@ body {
 .wd-author-logo {
     width: 12px;
 
+}
+
+.wd-img-bnw {
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+}
+
+.wd-vertical-center {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.wd-vertical-align {
+    margin-top: 4px;
+    vertical-align: middle;
+}
+
+.fa-stack.wd-stacked-remove-padding {
+    width: 1em;
+}
+
+.fa-stack-1x.wd-stacked1-remove-padding {
+    width: 0px;
+    padding: 0px;
 }
