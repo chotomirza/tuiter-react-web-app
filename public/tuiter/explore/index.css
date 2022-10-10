@@ -10,7 +10,7 @@ body {
 }
 
 .wd-post-title-pos {
-    top: 260px;
+    top: 80%;
     bottom: 0px;
     left: 10px;
     right: 0px;
@@ -84,10 +84,15 @@ body {
 }
 
 .fa-stack.wd-stacked-remove-padding {
-    width: 1em;
+    width: 0em;
+
 }
 
 .fa-stack-1x.wd-stacked1-remove-padding {
     width: 0px;
     padding: 0px;
+}
+
+.wd-text-wrap {
+    word-wrap: break-word;
 }
