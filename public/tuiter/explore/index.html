@@ -2,10 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Explore</title>
-
-    <!--    our css         -->
-    <link href="index.css" rel="stylesheet"/>
+    <title>Explore Screen</title>
 
 
     <!--    bootstrap      -->
@@ -16,6 +13,16 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
           rel="stylesheet"/>
 
+    <!--    our css         -->
+    <link href="index.css" rel="stylesheet"/>
+
+    <!--    bootswatch   -->
+    <link href="../../vendors/bootswatch/bootstrap.min.css" rel="stylesheet"/>
+
+<!--    jQuery      -->
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+            integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+            crossorigin="anonymous"></script>
 
 </head>
 
@@ -32,386 +39,396 @@
 
 
 <!-- Container containing everything  -->
-<div class="container pt-1">
-
-
-
-    <!--        Main Row        -->
-    <div class="row mt-2">
-
-        <!--        ==Left Sidebar==      -->
-        <div class="col-sm-2 col-md-2 col-lg-1 col-xl-2 col-xxl-2">
-            <div class="list-group">
-                <a href="#" class="list-group-item"><i class="fab fa-twitter"></i></a>
-
-                <a href="#" class="list-group-item">
-                    <i class="fa fa-home float-start pe-2 pt-1"></i>
-                    <span class="d-none d-xl-block">Home</span>
-                </a>
-
-
-
-                <a href="#" class="list-group-item active"><i class="fa fa-hashtag float-start pe-2 pt-1"></i><span class="d-none d-xl-block">Explore</span></a>
-                <a href="#" class="list-group-item"> <i class="fa fa-bell float-start pe-2 pt-1"></i><span class="d-none d-xl-block">Notifications</span></a>
-                <a href="#" class="list-group-item"> <i class="fa fa-envelope float-start pe-2 pt-1"></i><span class="d-none d-xl-block">Messages</span></a>
-                <a href="#" class="list-group-item"> <i class="fa fa-bookmark float-start pe-2 pt-1"></i><span class="d-none d-xl-block">Bookmarks</span></a>
-                <a href="#" class="list-group-item"> <i class="fa fa-list float-start pe-2 pt-1"></i><span class="d-none d-xl-block">Lists</span></a>
-                <a href="#" class="list-group-item"> <i class="fa fa-user float-start pe-2 pt-1"></i><span class="d-none d-xl-block">Profile</span></a>
-                <a href="#" class="list-group-item">
-                                                <span class="fa-stack wd-stacked-remove-padding float-start">
-                    <i class="fa fa-circle fa-stack-1x"></i>
-                    <i class="fa fa-ellipsis-h fa-stack-1x fa-inverse"></i>
-                                                </span>
-
-                    <span class="d-none d-xl-block ps-4">More</span></a>
-            </div>
-
-            <button class="btn btn-primary w-100 mt-2 rounded-pill">Tuit</button>
-        </div>
-
-
-        <!--        ==Middle==       -->
-        <div class="col-sm-10 col-md-10 col-lg-7 col-xl-6 col-xxl-6">
-
-            <!--            Search box          -->
-            <div class="row">
-                <div class="col-11 position-relative">
-                    <input class="form-control rounded-pill ps-5"
-                           placeholder="Search Tuiter"/>
-                    <span class="position-absolute wd-nudge-up">
-<!--                        <i class="fa fa-binoculars"></i>-->
-                        <i class="fa fa-search"></i>
-                    </span>
-                </div>
-
-                <div class="col-1">
-                    <span class="float-end">
-                        <i class="fa fa-cog fa-2x wd-vertical-align" style="color: #0d6dfc"></i>
-                    </span>
-                </div>
-
-            </div>
-
-            <!--            Tabs on top         -->
-            <ul class="nav nav-tabs mt-2">
-                <li class="nav-item">
-                    <a href="for-you.html" class="nav-link active">For You</a>
-                </li>
-
-                <li class="nav-item">
-                    <a href="trending.html" class="nav-link">Trending</a>
-                </li>
-
-                <li class="nav-item">
-                    <a href="news.html" class="nav-link">News</a>
-                </li>
-
-                <li class="nav-item">
-                    <a href="sports.html" class="nav-link">Sports</a>
-                </li>
-
-                <li class="nav-item">
-                    <a href="entertainment.html" class="nav-link d-none d-md-block">Entertainment</a>
-                </li>
-
-            </ul>
-
-<!-- CARD : Big Image with Text, List of Posts  -->
-            <div class="card">
-                <span class="position-relative">
-                <img class="card-img-top" src="../../images/ships.png" alt="a fleet of ships">
-                <h1 class="text-white position-absolute wd-post-title-pos display-6">Fleets of War</h1>
-                </span>
-
-                <ul class="list-group">
-
-                    <!--                    item 1-->
-                    <li class="list-group-item wd-card-padding-spec">
-                        <div class="card-body wd-card-body-override-spec">
-                            <!--                                each row added here-->
-                            <div class="row">
-                                <div class="col-sm-9 col-lg-10 float-start">
-                                    <div class="text-secondary small">
-                                        Web Development
-                                    </div>
-
-                                    <div class="">
-                                        <span class="text-black fw-bolder">ReactJS</span>
-                                        <span>
-                                                <img class="wd-author-logo wd-img-bnw"
-                                                     src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Twitter_Verified_Badge.svg/2048px-Twitter_Verified_Badge.svg.png"/>
-                                    </span>
-                                        <span class="text-secondary small">- 2h</span>
-                                    </div>
-
-                                    <div class="text-black fw-bold small wd-text-wrap">
-                                        React.js is a component based front end library that makes it very easy to build
-                                        Single Page Application or SPAs
-                                    </div>
-
-                                    <div class="text-secondary small">
-                                        123K Tweets
-                                    </div>
-
-                                </div>
-
-
-                                <div class="col-sm-3 col-lg-2 float-end">
-                                    <img src="../../images/reactlogo.png" width="100px" height="100px"
-                                         class="float-end rounded">
-                                </div>
-
-                            </div>
-                        </div>
-
-                    </li>
-
-                    <!--                    item 2-->
-                    <li class="list-group-item wd-card-padding-spec">
-                        <div class="card-body wd-card-body-override-spec">
-                            <!--                                each row added here-->
-                            <div class="row">
-                                <div class="col-sm-9 col-lg-10 float-start">
-                                    <div class="text-secondary small">
-                                        <!--                                       intentionally blank          -->
-                                    </div>
-                                    <div class="">
-                                        <span class="text-black fw-bolder">JavaScript</span>
-                                        <span>
-                                                <img class="wd-author-logo wd-img-bnw"
-                                                     src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Twitter_Verified_Badge.svg/2048px-Twitter_Verified_Badge.svg.png"/>
-                                    </span>
-                                        <span class="text-secondary small">- 3h</span>
-                                    </div>
-                                    <div class="text-black fw-bold small wd-text-wrap">
-                                        JavaScript is a programming language that can run on browsers as well as
-                                        desktops
-                                    </div>
-                                    <div class="text-secondary small">
-                                        116K Tweets
-                                    </div>
-                                </div>
-
-                                <div class="col-sm-3 col-lg-2 float-end">
-                                    <img src="../../images/jslogo.png" width="100px" height="100px"
-                                         class="float-end rounded">
-                                </div>
-
-                            </div>
-                        </div>
-
-                    </li>
-
-                    <!--                    item 3-->
-                    <li class="list-group-item wd-card-padding-spec">
-                        <div class="card-body wd-card-body-override-spec">
-                            <!--                                each row added here-->
-                            <div class="row">
-                                <div class="col-sm-9 col-lg-10 float-start">
-                                    <div class="text-secondary small">
-                                        Libraries
-                                    </div>
-
-                                    <div class="">
-                                        <span class="text-black fw-bolder">jQuery</span>
-                                        <!--                                        <span>-->
-                                        <!--                                                <img class="wd-author-logo"-->
-                                        <!--                                                     src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Twitter_Verified_Badge.svg/2048px-Twitter_Verified_Badge.svg.png"/>-->
-                                    </div>
-
-                                    <div class="text-black fw-bold small">
-                                        <!--intentionally blank-->
-                                    </div>
-
-                                    <div class="text-secondary small">
-                                        123K Tweets
-                                    </div>
-
-                                </div>
-
-
-                                <div class="col-sm-3 col-lg-2  float-end">
-                                    <img src="../../images/jqlogo.png" width="100px" height="100px"
-                                         class="float-end rounded">
-                                </div>
-
-                            </div>
-                        </div>
-
-                    </li>
-
-                    <!--                    item 4-->
-                    <li class="list-group-item wd-card-padding-spec">
-                        <div class="card-body wd-card-body-override-spec">
-                            <!--                                each row added here-->
-                            <div class="row">
-                                <div class="col-sm-9 col-lg-10 float-start">
-                                    <div class="text-secondary small">
-                                        Web Development
-                                    </div>
-
-                                    <div class="">
-                                        <span class="text-black fw-bolder">ReactJS</span>
-                                        <span>
-                                                <img class="wd-author-logo wd-img-bnw"
-                                                     src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Twitter_Verified_Badge.svg/2048px-Twitter_Verified_Badge.svg.png"/>
-                                        </span>
-                                        <span class="text-secondary small">- 8h</span>
-                                    </div>
-
-                                    <div class="text-black fw-bold small">
-<!--intentionally blank-->
-                                    </div>
-
-                                    <div class="text-secondary small">
-                                        1.7K Tweets
-                                    </div>
-
-                                </div>
-
-
-                                <div class="col-sm-3 col-lg-2  float-end">
-                                    <img src="../../images/nodejslogo.png" width="100px" height="100px"
-                                         class="float-end rounded">
-                                </div>
-
-                            </div>
-                        </div>
-
-                    </li>
-
-
-                </ul>
-
-
-            </div>
-
-
-            <!--                            </p>-->
-        </div>
-
-
-        <!--        ==Right Sidebar==       -->
-        <div class="col-lg-4 col-xl-4 col-xxl-4 d-none d-lg-block">
-            <ul class="list-group">
-
-                <li class="list-group-item">
-                    <div class="row">
-                        <div class="col"><b>Who to follow</b></div>
-                    </div>
-                </li>
-
-
-                <li class="list-group-item">
-                    <div class="row">
-                        <div class="col-2">
-                            <img src="https://aninditadhikary.files.wordpress.com/2010/12/javalogosmall1.png"
-                                 width="50px" height="50px"
-                                 class="rounded-circle">
-                        </div>
-                        <div class="col-sm-9 col-lg-10 float-start">
-                            <div class="row"><b>Java <i class="fa fa-check-circle"></i></b></div>
-                            <div class="text-black">@Java</div>
-                        </div>
-
-                        <div class="col wd-vertical-center">
-                            <button class="btn btn-primary rounded-pill float-end">Follow</button>
-                        </div>
-
-                    </div>
-                </li>
-
-
-                <li class="list-group-item">
-                    <div class="row">
-
-                        <div class="col-2">
-                            <img src="https://res.cloudinary.com/crunchbase-production/image/upload/j3dbh6kok0dket3uz2vy"
-                                 width="50px" height="50px"
-                                 class="rounded-circle">
-                        </div>
-
-                        <div class="col-sm-9 col-lg-10 float-start">
-                            <div class="row"><b>Relativity Space <i class="fa fa-check-circle"></i></b></div>
-
-
-                            <div class="text-black">@relativityspace</div>
-                        </div>
-
-                        <div class="col wd-vertical-center">
-                            <button class="btn btn-primary rounded-pill float-end">Follow</button>
-                        </div>
-
-                    </div>
-                </li>
-
-                <li class="list-group-item">
-                    <div class="row">
-                        <div class="col-2">
-                            <img src="https://res.cloudinary.com/crunchbase-production/image/upload/c_lpad,f_auto,q_auto:eco,dpr_1/vx4hxg2tnybefwmt4xxb"
-                                 width="50px" class="rounded-circle">
-                        </div>
-                        <div class="col-sm-9 col-lg-10 float-start">
-                            <div class="row"><b>Virgin Galactic <i class="fa fa-check-circle"></i></b></div>
-
-                            <div class="text-black">@virgingalactic</div>
-
-                        </div>
-                        <div class="col wd-vertical-center">
-                            <button class="btn btn-primary rounded-pill float-end">Follow</button>
-                        </div>
-                    </div>
-                </li>
-
-                <li class="list-group-item">
-                    <div class="row">
-                        <div class="col-2">
-                            <img src="../../images/nasa_pic.jpg"
-                                 width="50px"
-                                 class="rounded-circle">
-                        </div>
-                        <div class="col-sm-9 col-lg-10 float-start">
-                            <div class="row"><b>NASA <i class="fa fa-check-circle"></i></b></div>
-
-                            <div class="text-black">@NASA</div>
-
-                        </div>
-                        <div class="col wd-vertical-center">
-                            <button class="btn btn-primary rounded-pill float-end">Follow</button>
-                        </div>
-                    </div>
-                </li>
-
-                <li class="list-group-item">
-                    <div class="row">
-                        <div class="col-2">
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/e/e8/Tesla_logo.png" width="50px"
-                                 class="rounded-circle">
-                        </div>
-                        <div class="col-sm-9 col-lg-10 float-start">
-                            <div class="row"><b>Tesla <i class="fa fa-check-circle"></i></b></div>
-
-                            <div class="text-black">@Tesla</div>
-
-                        </div>
-                        <div class="col wd-vertical-center">
-                            <button class="btn btn-primary rounded-pill float-end">Follow</button>
-                        </div>
-                    </div>
-                </li>
-
-
-            </ul>
-        </div>
-
-    </div>
-
-
-</div>
-
-
+<!--<div class="container pt-1">-->
+
+
+
+<!--    &lt;!&ndash;        Main Row        &ndash;&gt;-->
+<!--    <div class="row mt-2">-->
+
+<!--        &lt;!&ndash;        ==Left Sidebar==      &ndash;&gt;-->
+<!--        <div class="col-sm-2 col-md-2 col-lg-1 col-xl-2 col-xxl-2">-->
+<!--            <div class="list-group">-->
+<!--                <a href="#" class="list-group-item"><i class="fab fa-twitter"></i></a>-->
+
+<!--                <a href="#" class="list-group-item">-->
+<!--                    <i class="fa fa-home float-start pe-2 pt-1"></i>-->
+<!--                    <span class="d-none d-xl-block">Home</span>-->
+<!--                </a>-->
+
+
+
+<!--                <a href="#" class="list-group-item active"><i class="fa fa-hashtag float-start pe-2 pt-1"></i><span class="d-none d-xl-block">Explore</span></a>-->
+<!--                <a href="#" class="list-group-item"> <i class="fa fa-bell float-start pe-2 pt-1"></i><span class="d-none d-xl-block">Notifications</span></a>-->
+<!--                <a href="#" class="list-group-item"> <i class="fa fa-envelope float-start pe-2 pt-1"></i><span class="d-none d-xl-block">Messages</span></a>-->
+<!--                <a href="#" class="list-group-item"> <i class="fa fa-bookmark float-start pe-2 pt-1"></i><span class="d-none d-xl-block">Bookmarks</span></a>-->
+<!--                <a href="#" class="list-group-item"> <i class="fa fa-list float-start pe-2 pt-1"></i><span class="d-none d-xl-block">Lists</span></a>-->
+<!--                <a href="#" class="list-group-item"> <i class="fa fa-user float-start pe-2 pt-1"></i><span class="d-none d-xl-block">Profile</span></a>-->
+<!--                <a href="#" class="list-group-item">-->
+<!--                                                <span class="fa-stack wd-stacked-remove-padding float-start">-->
+<!--                    <i class="fa fa-circle fa-stack-1x"></i>-->
+<!--                    <i class="fa fa-ellipsis-h fa-stack-1x fa-inverse"></i>-->
+<!--                                                </span>-->
+
+<!--                    <span class="d-none d-xl-block ps-4">More</span></a>-->
+<!--            </div>-->
+
+<!--            <button class="btn btn-primary w-100 mt-2 rounded-pill">Tuit</button>-->
+<!--        </div>-->
+
+
+<!--        &lt;!&ndash;        ==Middle==       &ndash;&gt;-->
+<!--        <div class="col-sm-10 col-md-10 col-lg-7 col-xl-6 col-xxl-6">-->
+
+<!--            &lt;!&ndash;            Search box          &ndash;&gt;-->
+<!--            <div class="row">-->
+<!--                <div class="col-11 position-relative">-->
+<!--                    <input class="form-control rounded-pill ps-5"-->
+<!--                           placeholder="Search Tuiter"/>-->
+<!--                    <span class="position-absolute wd-nudge-up">-->
+<!--&lt;!&ndash;                        <i class="fa fa-binoculars"></i>&ndash;&gt;-->
+<!--                        <i class="fa fa-search"></i>-->
+<!--                    </span>-->
+<!--                </div>-->
+
+<!--                <div class="col-1">-->
+<!--                    <span class="float-end">-->
+<!--                        <i class="fa fa-cog fa-2x wd-vertical-align" style="color: #0d6dfc"></i>-->
+<!--                    </span>-->
+<!--                </div>-->
+
+<!--            </div>-->
+
+<!--            &lt;!&ndash;            Tabs on top         &ndash;&gt;-->
+<!--            <ul class="nav nav-tabs mt-2">-->
+<!--                <li class="nav-item">-->
+<!--                    <a href="for-you.html" class="nav-link active">For You</a>-->
+<!--                </li>-->
+
+<!--                <li class="nav-item">-->
+<!--                    <a href="trending.html" class="nav-link">Trending</a>-->
+<!--                </li>-->
+
+<!--                <li class="nav-item">-->
+<!--                    <a href="news.html" class="nav-link">News</a>-->
+<!--                </li>-->
+
+<!--                <li class="nav-item">-->
+<!--                    <a href="sports.html" class="nav-link">Sports</a>-->
+<!--                </li>-->
+
+<!--                <li class="nav-item">-->
+<!--                    <a href="entertainment.html" class="nav-link d-none d-md-block">Entertainment</a>-->
+<!--                </li>-->
+
+<!--            </ul>-->
+
+<!--&lt;!&ndash; CARD : Big Image with Text, List of Posts  &ndash;&gt;-->
+<!--            <div class="card">-->
+<!--                <span class="position-relative">-->
+<!--                <img class="card-img-top" src="../../images/ships.png" alt="a fleet of ships">-->
+<!--                <h1 class="text-white position-absolute wd-post-title-pos display-6">Fleets of War</h1>-->
+<!--                </span>-->
+
+<!--                <ul class="list-group">-->
+
+<!--                    &lt;!&ndash;                    item 1&ndash;&gt;-->
+<!--                    <li class="list-group-item wd-card-padding-spec">-->
+<!--                        <div class="card-body wd-card-body-override-spec">-->
+<!--                            &lt;!&ndash;                                each row added here&ndash;&gt;-->
+<!--                            <div class="row">-->
+<!--                                <div class="col-sm-9 col-lg-10 float-start">-->
+<!--                                    <div class="text-secondary small">-->
+<!--                                        Web Development-->
+<!--                                    </div>-->
+
+<!--                                    <div class="">-->
+<!--                                        <span class="text-black fw-bolder">ReactJS</span>-->
+<!--                                        <span>-->
+<!--                                                <img class="wd-author-logo wd-img-bnw"-->
+<!--                                                     src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Twitter_Verified_Badge.svg/2048px-Twitter_Verified_Badge.svg.png"/>-->
+<!--                                    </span>-->
+<!--                                        <span class="text-secondary small">- 2h</span>-->
+<!--                                    </div>-->
+
+<!--                                    <div class="text-black fw-bold small wd-text-wrap">-->
+<!--                                        React.js is a component based front end library that makes it very easy to build-->
+<!--                                        Single Page Application or SPAs-->
+<!--                                    </div>-->
+
+<!--                                    <div class="text-secondary small">-->
+<!--                                        123K Tweets-->
+<!--                                    </div>-->
+
+<!--                                </div>-->
+
+
+<!--                                <div class="col-sm-3 col-lg-2 float-end">-->
+<!--                                    <img src="../../images/reactlogo.png" width="100px" height="100px"-->
+<!--                                         class="float-end rounded">-->
+<!--                                </div>-->
+
+<!--                            </div>-->
+<!--                        </div>-->
+
+<!--                    </li>-->
+
+<!--                    &lt;!&ndash;                    item 2&ndash;&gt;-->
+<!--                    <li class="list-group-item wd-card-padding-spec">-->
+<!--                        <div class="card-body wd-card-body-override-spec">-->
+<!--                            &lt;!&ndash;                                each row added here&ndash;&gt;-->
+<!--                            <div class="row">-->
+<!--                                <div class="col-sm-9 col-lg-10 float-start">-->
+<!--                                    <div class="text-secondary small">-->
+<!--                                        &lt;!&ndash;                                       intentionally blank          &ndash;&gt;-->
+<!--                                    </div>-->
+<!--                                    <div class="">-->
+<!--                                        <span class="text-black fw-bolder">JavaScript</span>-->
+<!--                                        <span>-->
+<!--                                                <img class="wd-author-logo wd-img-bnw"-->
+<!--                                                     src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Twitter_Verified_Badge.svg/2048px-Twitter_Verified_Badge.svg.png"/>-->
+<!--                                    </span>-->
+<!--                                        <span class="text-secondary small">- 3h</span>-->
+<!--                                    </div>-->
+<!--                                    <div class="text-black fw-bold small wd-text-wrap">-->
+<!--                                        JavaScript is a programming language that can run on browsers as well as-->
+<!--                                        desktops-->
+<!--                                    </div>-->
+<!--                                    <div class="text-secondary small">-->
+<!--                                        116K Tweets-->
+<!--                                    </div>-->
+<!--                                </div>-->
+
+<!--                                <div class="col-sm-3 col-lg-2 float-end">-->
+<!--                                    <img src="../../images/jslogo.png" width="100px" height="100px"-->
+<!--                                         class="float-end rounded">-->
+<!--                                </div>-->
+
+<!--                            </div>-->
+<!--                        </div>-->
+
+<!--                    </li>-->
+
+<!--                    &lt;!&ndash;                    item 3&ndash;&gt;-->
+<!--                    <li class="list-group-item wd-card-padding-spec">-->
+<!--                        <div class="card-body wd-card-body-override-spec">-->
+<!--                            &lt;!&ndash;                                each row added here&ndash;&gt;-->
+<!--                            <div class="row">-->
+<!--                                <div class="col-sm-9 col-lg-10 float-start">-->
+<!--                                    <div class="text-secondary small">-->
+<!--                                        Libraries-->
+<!--                                    </div>-->
+
+<!--                                    <div class="">-->
+<!--                                        <span class="text-black fw-bolder">jQuery</span>-->
+<!--                                        &lt;!&ndash;                                        <span>&ndash;&gt;-->
+<!--                                        &lt;!&ndash;                                                <img class="wd-author-logo"&ndash;&gt;-->
+<!--                                        &lt;!&ndash;                                                     src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Twitter_Verified_Badge.svg/2048px-Twitter_Verified_Badge.svg.png"/>&ndash;&gt;-->
+<!--                                    </div>-->
+
+<!--                                    <div class="text-black fw-bold small">-->
+<!--                                        &lt;!&ndash;intentionally blank&ndash;&gt;-->
+<!--                                    </div>-->
+
+<!--                                    <div class="text-secondary small">-->
+<!--                                        123K Tweets-->
+<!--                                    </div>-->
+
+<!--                                </div>-->
+
+
+<!--                                <div class="col-sm-3 col-lg-2  float-end">-->
+<!--                                    <img src="../../images/jqlogo.png" width="100px" height="100px"-->
+<!--                                         class="float-end rounded">-->
+<!--                                </div>-->
+
+<!--                            </div>-->
+<!--                        </div>-->
+
+<!--                    </li>-->
+
+<!--                    &lt;!&ndash;                    item 4&ndash;&gt;-->
+<!--                    <li class="list-group-item wd-card-padding-spec">-->
+<!--                        <div class="card-body wd-card-body-override-spec">-->
+<!--                            &lt;!&ndash;                                each row added here&ndash;&gt;-->
+<!--                            <div class="row">-->
+<!--                                <div class="col-sm-9 col-lg-10 float-start">-->
+<!--                                    <div class="text-secondary small">-->
+<!--                                        Web Development-->
+<!--                                    </div>-->
+
+<!--                                    <div class="">-->
+<!--                                        <span class="text-black fw-bolder">ReactJS</span>-->
+<!--                                        <span>-->
+<!--                                                <img class="wd-author-logo wd-img-bnw"-->
+<!--                                                     src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Twitter_Verified_Badge.svg/2048px-Twitter_Verified_Badge.svg.png"/>-->
+<!--                                        </span>-->
+<!--                                        <span class="text-secondary small">- 8h</span>-->
+<!--                                    </div>-->
+
+<!--                                    <div class="text-black fw-bold small">-->
+<!--&lt;!&ndash;intentionally blank&ndash;&gt;-->
+<!--                                    </div>-->
+
+<!--                                    <div class="text-secondary small">-->
+<!--                                        1.7K Tweets-->
+<!--                                    </div>-->
+
+<!--                                </div>-->
+
+
+<!--                                <div class="col-sm-3 col-lg-2  float-end">-->
+<!--                                    <img src="../../images/nodejslogo.png" width="100px" height="100px"-->
+<!--                                         class="float-end rounded">-->
+<!--                                </div>-->
+
+<!--                            </div>-->
+<!--                        </div>-->
+
+<!--                    </li>-->
+
+
+<!--                </ul>-->
+
+
+<!--            </div>-->
+
+
+<!--            &lt;!&ndash;                            </p>&ndash;&gt;-->
+<!--        </div>-->
+
+
+<!--        &lt;!&ndash;        ==Right Sidebar==       &ndash;&gt;-->
+<!--        <div class="col-lg-4 col-xl-4 col-xxl-4 d-none d-lg-block">-->
+<!--            <ul class="list-group">-->
+
+<!--                <li class="list-group-item">-->
+<!--                    <div class="row">-->
+<!--                        <div class="col"><b>Who to follow</b></div>-->
+<!--                    </div>-->
+<!--                </li>-->
+
+
+<!--                <li class="list-group-item">-->
+<!--                    <div class="row">-->
+<!--                        <div class="col-2">-->
+<!--                            <img src="https://aninditadhikary.files.wordpress.com/2010/12/javalogosmall1.png"-->
+<!--                                 width="50px" height="50px"-->
+<!--                                 class="rounded-circle">-->
+<!--                        </div>-->
+<!--                        <div class="col-sm-9 col-lg-10 float-start">-->
+<!--                            <div class="row"><b>Java <i class="fa fa-check-circle"></i></b></div>-->
+<!--                            <div class="text-black">@Java</div>-->
+<!--                        </div>-->
+
+<!--                        <div class="col wd-vertical-center">-->
+<!--                            <button class="btn btn-primary rounded-pill float-end">Follow</button>-->
+<!--                        </div>-->
+
+<!--                    </div>-->
+<!--                </li>-->
+
+
+<!--                <li class="list-group-item">-->
+<!--                    <div class="row">-->
+
+<!--                        <div class="col-2">-->
+<!--                            <img src="https://res.cloudinary.com/crunchbase-production/image/upload/j3dbh6kok0dket3uz2vy"-->
+<!--                                 width="50px" height="50px"-->
+<!--                                 class="rounded-circle">-->
+<!--                        </div>-->
+
+<!--                        <div class="col-sm-9 col-lg-10 float-start">-->
+<!--                            <div class="row"><b>Relativity Space <i class="fa fa-check-circle"></i></b></div>-->
+
+
+<!--                            <div class="text-black">@relativityspace</div>-->
+<!--                        </div>-->
+
+<!--                        <div class="col wd-vertical-center">-->
+<!--                            <button class="btn btn-primary rounded-pill float-end">Follow</button>-->
+<!--                        </div>-->
+
+<!--                    </div>-->
+<!--                </li>-->
+
+<!--                <li class="list-group-item">-->
+<!--                    <div class="row">-->
+<!--                        <div class="col-2">-->
+<!--                            <img src="https://res.cloudinary.com/crunchbase-production/image/upload/c_lpad,f_auto,q_auto:eco,dpr_1/vx4hxg2tnybefwmt4xxb"-->
+<!--                                 width="50px" class="rounded-circle">-->
+<!--                        </div>-->
+<!--                        <div class="col-sm-9 col-lg-10 float-start">-->
+<!--                            <div class="row"><b>Virgin Galactic <i class="fa fa-check-circle"></i></b></div>-->
+
+<!--                            <div class="text-black">@virgingalactic</div>-->
+
+<!--                        </div>-->
+<!--                        <div class="col wd-vertical-center">-->
+<!--                            <button class="btn btn-primary rounded-pill float-end">Follow</button>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </li>-->
+
+<!--                <li class="list-group-item">-->
+<!--                    <div class="row">-->
+<!--                        <div class="col-2">-->
+<!--                            <img src="../../images/nasa_pic.jpg"-->
+<!--                                 width="50px"-->
+<!--                                 class="rounded-circle">-->
+<!--                        </div>-->
+<!--                        <div class="col-sm-9 col-lg-10 float-start">-->
+<!--                            <div class="row"><b>NASA <i class="fa fa-check-circle"></i></b></div>-->
+
+<!--                            <div class="text-black">@NASA</div>-->
+
+<!--                        </div>-->
+<!--                        <div class="col wd-vertical-center">-->
+<!--                            <button class="btn btn-primary rounded-pill float-end">Follow</button>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </li>-->
+
+<!--                <li class="list-group-item">-->
+<!--                    <div class="row">-->
+<!--                        <div class="col-2">-->
+<!--                            <img src="https://upload.wikimedia.org/wikipedia/commons/e/e8/Tesla_logo.png" width="50px"-->
+<!--                                 class="rounded-circle">-->
+<!--                        </div>-->
+<!--                        <div class="col-sm-9 col-lg-10 float-start">-->
+<!--                            <div class="row"><b>Tesla <i class="fa fa-check-circle"></i></b></div>-->
+
+<!--                            <div class="text-black">@Tesla</div>-->
+
+<!--                        </div>-->
+<!--                        <div class="col wd-vertical-center">-->
+<!--                            <button class="btn btn-primary rounded-pill float-end">Follow</button>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </li>-->
+
+
+<!--            </ul>-->
+<!--        </div>-->
+
+<!--    </div>-->
+<!--</div>-->
+
+
+
+
+
+<div class="container" id="wd-explore"></div>
+<script src="index.js" type="module"></script>
 
 
 
 </body>
 </html>
+
+
+
+
+
+
+
