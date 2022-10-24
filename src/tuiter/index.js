@@ -22,30 +22,6 @@ function Tuiter() {
             </div>
         </div>
 
-
-
-
-
-        // <div>
-        //     {/*<Nav/>*/}
-        //     {/*<NavigationSidebar active="home"/>*/}
-        //     {/*<WhoToFollowListItem/>*/}
-        //     {/*<WhoToFollowListItem who={{*/}
-        //     {/*    userName: 'NASA', handle: 'NASA',*/}
-        //     {/*    avatarIcon: 'nasa.png',*/}
-        //     {/*}}/>*/}
-        //     {/*<WhoToFollowListItem who={{*/}
-        //     {/*    userName: 'Tesla', handle: 'tesla',*/}
-        //     {/*    avatarIcon: 'tesla.png',*/}
-        //     {/*}}/>*/}
-        //     {/*<WhoToFollowListItem who={{*/}
-        //     {/*    userName: 'SpaceX', handle: 'SpaceX',*/}
-        //     {/*    avatarIcon: 'spacex.png',*/}
-        //     {/*}}/>*/}
-        //
-        //
-        //     {/*<h1>Tuiter</h1>*/}
-        // </div>
     );
 }
 export default Tuiter
