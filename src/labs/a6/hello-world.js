@@ -1,4 +1,3 @@
-import {Link} from "react-router-dom";
 import Nav from "../../nav";
 // ../nav could not navigate it properly
 
