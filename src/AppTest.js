@@ -2,12 +2,6 @@
 import './App.css';
 // import WelcomeToFSD from "./WelcomeToFSD";
 
-import Labs from "./labs";
-import HelloWorld from "./labs/a6/hello-world";
-import Tuiter from "./tuiter";
-import {BrowserRouter} from "react-router-dom";
-import {Routes, Route} from "react-router";
-
 // function App() {
 //   return (
 //     <div className="App">
@@ -33,21 +27,7 @@ import {Routes, Route} from "react-router";
 
 function App() {
   return (
-      <BrowserRouter>
-      <div className="container">
-
-          <Routes>
-              <Route index // path="/labs" // removed the path and replaced that with index
-                     element={<Labs/>}/>
-              <Route path="/hello"
-                     element={<HelloWorld/>}/>
-              <Route path="/tuiter"
-                     element={<Tuiter/>}/>
-          </Routes>
-
-      </div>
-      </BrowserRouter>
-
+      <h1>Testing Testing!</h1>
   );
 }
 export default App;
