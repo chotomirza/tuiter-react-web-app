@@ -37,7 +37,8 @@ function App() {
       <div className="container">
 
           <Routes>
-              <Route index // path="/labs" // removed the path and replaced that with index
+              //{/*<Route index // path="/labs" // removed the path and replaced that with index*/}
+              <Route path="/*"
                      element={<Labs/>}/>
               <Route path="/hello"
                      element={<HelloWorld/>}/>
