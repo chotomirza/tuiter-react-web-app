@@ -1,10 +1,16 @@
 import React from "react";
-import whoArray from './who.json';
-// does it matter what I make the above import?
+import whoArray from '../data/who.json';
 import WhoToFollowListItem from "./who-to-follow-list-item";
+import {useSelector} from "react-redux";
 
 const WhoToFollowList = () => {
+    const whoArray = useSelector(
+        (state) => state.who);
+
     return (
+        // <div>
+        //     <h1>Who To Follow!!</h1>
+        // </div>
         <ul className="list-group list-unstyled">
             <li className="item-group-item">
                 <h3>Who to follow</h3>
@@ -12,7 +18,6 @@ const WhoToFollowList = () => {
             {
                 whoArray.map(who =>
                     <WhoToFollowListItem
-                        /*unsure about why it is not being able to understand who._id */
                         key={who._id}
                         who={who}/>
                 )

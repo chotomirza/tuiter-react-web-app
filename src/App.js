@@ -8,6 +8,8 @@ import Tuiter from "./tuiter";
 import {BrowserRouter} from "react-router-dom";
 import {Routes, Route} from "react-router";
 
+// import Mid from "./labs/mid"
+
 // function App() {
 //   return (
 //     <div className="App">
@@ -44,6 +46,9 @@ function App() {
                      element={<HelloWorld/>}/>
               <Route path="/tuiter"
                      element={<Tuiter/>}/>
+          {/*    remove after mid*/}
+          {/*    <Route path="/mid"*/}
+          {/*           element={<Mid/>}/>*/}
           </Routes>
 
       </div>
