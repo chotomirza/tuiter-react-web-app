@@ -1,6 +1,6 @@
 import { createSlice } from "@reduxjs/toolkit";
 import tuits from '../tuits/tuits.json';
-import {createTuitThunk, findTuitsThunk, deleteTuitThunk} from "../../services/tuits-thunks";
+import {createTuitThunk, findTuitsThunk, deleteTuitThunk, updateTuitThunk} from "../../services/tuits-thunks";
 
 const initialState = {
     tuits: [],
