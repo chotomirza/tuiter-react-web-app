@@ -15,6 +15,7 @@ const TuitsList = () => {
     const dispatch = useDispatch();
     useEffect(() => {
         dispatch(findTuitsThunk())
+        // eslint-disable-next-line
     }, [])
 
     // uncommented the line below
