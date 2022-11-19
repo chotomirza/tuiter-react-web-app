@@ -22,6 +22,8 @@ const TuitsList = () => {
     // const tuitsArray = useSelector(state => state.tuits);
 
     return (
+        // console.log("tuits-list.js");
+
         <ul className="list-group">
 
             {
@@ -33,6 +35,7 @@ const TuitsList = () => {
 
 
             {
+
                 tuitsArray.map(
                     post =>
                         <TuitItem

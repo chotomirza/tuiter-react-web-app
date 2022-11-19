@@ -26,6 +26,7 @@ const TuitItem = (
         <li className="list-group-item">
             <div className="row">
                 <div className="col-auto">
+                    console.log("tuits-list.js");
                     <img width={50}
                          className="float-end rounded-circle"
                          src={`/images/${tuit.image}`} alt="user"/>

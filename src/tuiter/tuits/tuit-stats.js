@@ -72,4 +72,5 @@ const TuitStats = ({tuit}) => {
     )
 }
 
+
 export default TuitStats;
