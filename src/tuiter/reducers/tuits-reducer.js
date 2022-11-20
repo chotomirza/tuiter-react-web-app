@@ -1,5 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
-// import tuits from '../tuits/tuits.json';
+import tuits from '../tuits/tuits.json';
 // ^ commented out the line above
 
 import {createTuitThunk, findTuitsThunk, deleteTuitThunk, updateTuitThunk} from "../../services/tuits-thunks";
@@ -9,30 +9,29 @@ const initialState = {
     loading: false
 }
 
-const currentUser = {
-    "userName": "NASA",
-    "handle": "@nasa",
-    "image": "/../../images/nasa_pic.jpg",
-};
+// const currentUser = {
+//     "userName": "NASA",
+//     "handle": "@nasa",
+//     // "image": "/../../images/nasa_pic.jpg",
+//     "image": "/reactlogo.png",
+// };
 
-const templateTuit = {
-    ...currentUser,
-    "topic": "Space",
-    "time": "2h",
-    "liked": false,
-    "disliked": false,
-    "replies": 0,
-    "retuits": 0,
-    "likes": 0,
-    "dislikes": 0,
-}
+// const templateTuit = {
+//     ...currentUser,
+//     "topic": "Space",
+//     "time": "2h",
+//     "liked": false,
+//     "disliked": false,
+//     "replies": 9,
+//     "retuits": 9,
+//     "likes": 9,
+//     "dislikes": 9,
+// }
 
 
 const tuitsSlice = createSlice({
     name: 'tuits',
-    // initialState: tuits,
     initialState,
-
     extraReducers: {
 
         // update Tuit Thunk
@@ -48,6 +47,15 @@ const tuitsSlice = createSlice({
             },
 
 
+        // delete Tuit Thunk
+        [deleteTuitThunk.fulfilled] :
+            (state, { payload }) => {
+                state.loading = false
+                state.tuits = state.tuits
+                    .filter(t => t._id !== payload)
+            },
+
+
         // create Tuit Thunk
         [createTuitThunk.fulfilled]:
             (state, { payload }) => {
@@ -56,13 +64,7 @@ const tuitsSlice = createSlice({
             },
 
 
-        // delete Tuit Thunk
-        [deleteTuitThunk.fulfilled] :
-            (state, { payload }) => {
-                state.loading = false
-                state.tuits = state.tuits
-                    .filter(t => t._id !== payload)
-            },
+
 
         // find Tuit Thunk
         [findTuitsThunk.pending]:
@@ -93,7 +95,7 @@ const tuitsSlice = createSlice({
         createTuit(state, action) {
             state.unshift({
                 ...action.payload,
-                ...templateTuit,
+                // ...templateTuit,
                 _id: (new Date()).getTime(),
             })
         }
