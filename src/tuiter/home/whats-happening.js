@@ -21,7 +21,9 @@ const WhatsHappening = () => {
     return (
         <div className="row">
             <div className="col-auto">
-                <img src="../../images/nasa_pic.jpg" width={60} alt="user"/>
+                {/*no need to mention "PUBLIC", it automatically assumes public*/}
+                <img src = "/images/nasa_pic.jpg"
+                     width={60} alt="user_post_area"/>
 
             </div>
             <div className="col-10">

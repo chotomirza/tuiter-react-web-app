@@ -32,11 +32,11 @@ const TuitStats = ({tuit}) => {
             <div className="col">
                 {
                     tuit.disliked &&
-                    <i className="bi bi-sign-do-not-enter me-2 text-danger"></i>
+                    <i className="bi bi-hand-thumbs-down-fill me-2 text-danger"></i>
                 }
                 {
                     !tuit.disliked &&
-                    <i className="bi bi-sign-do-not-enter me-2"></i>
+                    <i className="bi bi-hand-thumbs-down me-2"></i>
                 }
                 {tuit.dislikes}
             </div>
@@ -50,12 +50,10 @@ const TuitStats = ({tuit}) => {
                 <i onClick={() => dispatch(updateTuitThunk({
                     ...tuit,
                     likes: tuit.likes + 1
-                //    added an extra ) below
-
                 }))
                 }
-                   className="bi bi-heart-fill me-2 text-danger">
-
+                   // className="bi bi-heart-fill me-2 text-danger">
+>
                 </i>
             </div>
 
