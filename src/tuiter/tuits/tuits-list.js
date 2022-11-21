@@ -15,7 +15,7 @@ const TuitsList = () => {
     const dispatch = useDispatch();
     useEffect(() => {
         dispatch(findTuitsThunk())
-    }, [dispatch])
+    }, [dispatch]);
 
     return (
         <ul className="list-group">
