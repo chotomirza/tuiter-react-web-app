@@ -2,7 +2,6 @@ import React, {useState} from "react";
 
 // import {createTuit} from "../reducers/tuits-reducer";
 import {createTuitThunk} from "../../services/tuits-thunks";
-
 import {useDispatch} from "react-redux";
 
 const WhatsHappening = () => {
@@ -23,17 +22,19 @@ const WhatsHappening = () => {
             <div className="col-auto">
                 {/*no need to mention "PUBLIC", it automatically assumes public*/}
                 <img src = "/images/nasa_pic.jpg"
-                     width={60} alt="user_post_area"/>
-
+                     width={60}
+                     alt="user_post_area"/>
             </div>
             <div className="col-10">
-       <textarea value={whatsHappening} placeholder="What's happening?"
-                 className="form-control border-0"
-                 onChange={(event) => setWhatsHappening(event.target.value)}>
-       </textarea>
+    <textarea value={whatsHappening} placeholder="What's happening?"
+              className="form-control border-0"
+              onChange={(event) => setWhatsHappening(event.target.value)}>
+    </textarea>
                 <div>
                     <button className="rounded-pill btn btn-primary float-end mt-2 ps-3 pe-3 fw-bold"
-                            onClick={tuitClickHandler}>
+                            onClick={
+                                () => tuitClickHandler(whatsHappening)
+                            }>
                         Tuit
                     </button>
                     <div className="text-primary fs-2">
@@ -45,7 +46,9 @@ const WhatsHappening = () => {
                     </div>
                 </div>
             </div>
-            <div className="col-12"><hr/></div>
+            <div className="col-12">
+                <hr/>
+            </div>
         </div>
     );
 }

@@ -9,24 +9,24 @@ const initialState = {
     loading: false
 }
 
-// const currentUser = {
-//     "userName": "NASA",
-//     "handle": "@nasa",
-//     // "image": "/../../images/nasa_pic.jpg",
-//     "image": "/reactlogo.png",
-// };
+const currentUser = {
+    "userName": "NASA",
+    "handle": "@nasa",
+    // "image": "/../../images/nasa_pic.jpg",
+    "image": "/reactlogo.png",
+};
 
-// const templateTuit = {
-//     ...currentUser,
-//     "topic": "Space",
-//     "time": "2h",
-//     "liked": false,
-//     "disliked": false,
-//     "replies": 9,
-//     "retuits": 9,
-//     "likes": 9,
-//     "dislikes": 9,
-// }
+const templateTuit = {
+    ...currentUser,
+    "topic": "Space",
+    "time": "2h",
+    "liked": false,
+    "disliked": false,
+    "replies": 9,
+    "retuits": 9,
+    "likes": 9,
+    "dislikes": 9,
+}
 
 
 const tuitsSlice = createSlice({

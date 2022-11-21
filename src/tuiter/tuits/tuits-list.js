@@ -15,10 +15,7 @@ const TuitsList = () => {
     const dispatch = useDispatch();
     useEffect(() => {
         dispatch(findTuitsThunk())
-    }, [])
-
-    // uncommented the line below
-    // const tuitsArray = useSelector(state => state.tuits);
+    }, [dispatch])
 
     return (
         <ul className="list-group">
