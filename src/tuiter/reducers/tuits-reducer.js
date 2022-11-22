@@ -1,6 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
 import tuits from '../tuits/tuits.json';
-// ^ commented out the line above
 
 import {createTuitThunk, findTuitsThunk, deleteTuitThunk, updateTuitThunk} from "../../services/tuits-thunks";
 
@@ -103,5 +102,5 @@ const tuitsSlice = createSlice({
 
 });
 
-// export const {createTuit, deleteTuit} = tuitsSlice.actions;
+export const {createTuit, deleteTuit} = tuitsSlice.actions;
 export default tuitsSlice.reducer;
